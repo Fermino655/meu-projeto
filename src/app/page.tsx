@@ -1,8 +1,17 @@
+import Image from "next/image";
+
 export default function Page() {
   return (
     <main className="min-h-screen">
-      <section className="max-w-3xl mx-auto py-24 px-6 text-center">
-        <h1 className="text-4xl font-bold tracking-tight">
+      <section className="max-w-4xl mx-auto py-20 px-6 text-center">
+        <Image
+          src="/portfolio-cover.png"
+          alt="Capa do portfólio"
+          width={1200}
+          height={600}
+          className="mx-auto rounded-2xl shadow-lg"
+        />
+        <h1 className="mt-10 text-4xl font-bold tracking-tight">
           Olá, eu sou o Fermino
         </h1>
         <p className="mt-6 text-lg text-neutral-600">
